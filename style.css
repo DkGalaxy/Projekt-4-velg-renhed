@@ -33,3 +33,9 @@ header {
 .om-os-container {
     margin: 0;
 }
+
+/* Footer */
+footer {
+    background-color: #30B24B;
+    color: white;
+}
