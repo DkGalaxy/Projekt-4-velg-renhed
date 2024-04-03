@@ -11,6 +11,36 @@ body {
     box-sizing: border-box;
 }
 
+/* Overskrifter */
+
+p {
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Kanit';
+    font-style: italic;
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-family: 'Kanit';
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Knapper */
+.green-btn {
+    background-color: #30B24B;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kanit';
+}
+
 /* Header + Nav */
 header {
     background-color: #30B24B;
@@ -19,17 +49,28 @@ header {
     margin: 0;
 }
 
+.logo {
+    float: left;
+    position: absolute;
+    z-index: 999;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+}
+
 .menu-toggle {
     display: block;
     width: 40px;
     height: 30px;
     cursor: pointer;
     position: relative;
+    z-index: 1000;
 }
 
 .menu-toggle i {
     font-size: 24px;
-    
 }
 
 .menu {
@@ -43,7 +84,7 @@ header {
 .menu ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -63,6 +104,11 @@ header {
 
 /* Forside */
 .hero-container {
+    background-image: url(billeder/wave-forside.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
     margin: 0;
     padding: 0;
 }
@@ -75,15 +121,17 @@ header {
 }
 
 .om-os-container {
-    margin: 0;
+    padding: 40px;
 }
 
 .seneste-projekter-container {
     background-color: #D7EFF5;
+    padding: 40px;
 }
 
 .tal-container {
     background-color: #FFC6C9;
+    padding: 40px;
 }
 
 /* Footer */
