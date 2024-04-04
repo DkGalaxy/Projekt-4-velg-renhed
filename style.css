@@ -102,6 +102,19 @@ header {
     color: white;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #30b24a84;
+    color: white;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
 /* Forside */
 .hero-container {
     background-image: url(billeder/wave-forside.svg);
