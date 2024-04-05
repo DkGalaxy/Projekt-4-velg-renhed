@@ -67,6 +67,7 @@ header {
     cursor: pointer;
     position: relative;
     z-index: 1000;
+    margin-left: auto;
 }
 
 .menu-toggle i {
@@ -109,6 +110,10 @@ header {
     left: 0;
     background-color: #30b24a84;
     color: white;
+}
+
+.dropdown-menu.active {
+    display: block;
 }
 
 .dropdown-toggle {
