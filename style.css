@@ -31,6 +31,13 @@ h2 {
     margin-bottom: 20px;
 }
 
+h3 {
+    font-family: 'Kanit';
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+
 /* Knapper */
 .green-btn {
     background-color: #30B24B;
@@ -39,6 +46,21 @@ h2 {
     border: none;
     cursor: pointer;
     font-family: 'Kanit';
+}
+
+.footer-btn {
+    display: flex;
+    background-color: #FFCC45;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kanit';
+    width: auto;
+}
+
+.footer-btn i {
+    margin-right: 10px;
 }
 
 /* Header + Nav */
@@ -154,6 +176,10 @@ header {
 
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #30B24B;
     color: white;
+    padding: 40px;
 }
+
