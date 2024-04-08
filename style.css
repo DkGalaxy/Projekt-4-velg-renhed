@@ -55,8 +55,8 @@ h3 {
     border: none;
     cursor: pointer;
     font-family: 'Kanit';
-    width: auto;
-    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 .footer-btn i {
@@ -176,10 +176,13 @@ header {
 
 /* Footer */
 footer {
-    display: flex;
-    flex-direction: column;
     background-color: #30B24B;
     color: white;
     padding: 40px;
+}
+
+.footer-socialemedier i {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
