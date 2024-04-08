@@ -181,6 +181,10 @@ footer {
     padding: 40px;
 }
 
+.footer-grid {
+    margin-bottom: 10px;
+}
+
 .footer-socialemedier i {
     margin-right: 10px;
     margin-bottom: 10px;
