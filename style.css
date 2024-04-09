@@ -107,7 +107,6 @@ header {
 .menu ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 50px;
     text-align: center;
 }
 
@@ -127,10 +126,25 @@ header {
 
 .dropdown-menu {
     display: none;
-    position: absolute;
     top: 100%;
     left: 0;
     background-color: #30b24a84;
+    color: white;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu ul li {
+    background-color: #30b24a84;
+}
+
+.dropdown-menu li a {
+    display: block;
+    background-color: #30b24a84;
+    padding: 0px;
+    text-decoration: none;
     color: white;
 }
 
