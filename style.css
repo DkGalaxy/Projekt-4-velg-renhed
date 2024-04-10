@@ -73,7 +73,7 @@ header {
 
 .logo {
     float: left;
-    position: absolute;
+    position: fixed;
     z-index: 999;
 }
 
@@ -94,10 +94,20 @@ header {
 
 .menu-toggle i {
     font-size: 24px;
+    position: fixed;
 }
 
 .menu {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color:#30B24B; 
+    z-index: 998; /* Ensure it's above other content */
+    overflow: auto; /* Enable scrolling if needed */
+    padding-top: 20px; /* Adjust top padding */
 }
 
 .menu.active {
@@ -124,6 +134,10 @@ header {
     color: white;
 }
 
+.menu ul li a i {
+    margin-right: 10px;
+}
+
 .dropdown-menu {
     display: none;
     top: 100%;
@@ -142,7 +156,6 @@ header {
 
 .dropdown-menu li a {
     display: block;
-    background-color: #30b24a84;
     padding: 0px;
     text-decoration: none;
     color: white;
@@ -150,11 +163,14 @@ header {
 
 .dropdown-menu.active {
     display: block;
+    background-color: #0000001a;
+    margin-top: 10px;
 }
 
 .dropdown-toggle {
     cursor: pointer;
 }
+
 
 /* Forside */
 .hero-container {

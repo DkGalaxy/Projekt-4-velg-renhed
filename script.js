@@ -1,7 +1,12 @@
 // Hamburger-menu 
 document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.menu').classList.toggle('active');
-  });
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+
+  const icon = document.querySelector('.menu-toggle i');
+  icon.classList.toggle('fa-bars');
+  icon.classList.toggle('fa-times');
+});
 
 // Dropdown-menu
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,6 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const dropdownMenu = this.nextElementSibling;
         dropdownMenu.classList.toggle('active');
+
+        const icon = this.querySelector('i');
+            icon.classList.toggle('fa-chevron-right');
+            icon.classList.toggle('fa-chevron-down');
       });
     });
   });
+
+  
