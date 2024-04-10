@@ -176,13 +176,13 @@ header {
 
 /* Forside */
 .hero-container {
-    background-image: url(billeder/wave-forside.svg);
+    background-image: url(images/wave-forside.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 40vh;
     margin: 0;
-    padding: 0;
+    padding-top: 50px;
 }
 
 .hero-container img{
