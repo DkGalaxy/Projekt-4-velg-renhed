@@ -10,19 +10,21 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 
 // Dropdown-menu
 document.addEventListener('DOMContentLoaded', function() {
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-  
-    dropdownToggles.forEach(function(toggle) {
-      toggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        const dropdownMenu = this.nextElementSibling;
-        dropdownMenu.classList.toggle('active');
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
-        const icon = this.querySelector('i');
-            icon.classList.toggle('fa-chevron-right');
-            icon.classList.toggle('fa-chevron-down');
+  dropdownToggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+          if (e.target.classList.contains('dropdown-icon')) {
+              e.preventDefault();
+              const dropdownMenu = this.nextElementSibling;
+              dropdownMenu.classList.toggle('active');
+              
+              const icon = this.querySelector('.dropdown-icon');
+              icon.classList.toggle('fa-chevron-right');
+              icon.classList.toggle('fa-chevron-down');
+          }
       });
-    });
   });
+});
 
   
