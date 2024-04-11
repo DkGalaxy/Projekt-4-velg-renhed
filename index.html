@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="javascript/script.js" defer></script>
     <script src="https://kit.fontawesome.com/3259b7cfe6.js" crossorigin="anonymous"></script>
     <title>Forside | Stop Spild af Mad</title>
 </head>
@@ -19,8 +19,24 @@
         <nav class="menu">
             <ul>
                 <li><a href="#">Forside</a></li>
-                <li><a href="om-madspild.html">Om madspild</a></li>
-                <li><a href="#">Om organisationen</a></li>
+                <li class="dropdown">
+                    <a href="om-madspild.html" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om madspild</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="madspild-i-tal.html">Madspild i tal</a></li>
+                        <li><a href="#">Madspildsrapporter</a></li>
+                        <li><a href="#">Hvad kan du gøre?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om organisationen</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Vores resultater</a></li>
+                        <li><a href="#">Vores nyheder</a></li>
+                        <li><a href="#">Bestyrelsen</a></li>
+                        <li><a href="#">Vores venner</a></li>
+                        <li><a href="#">Regnskab</a></li>
+                    </ul>   
+                </li>
                 <li><a href="#">Vores projekter</a></li>
                 <li><a href="#">Kontakt</a></li>
                 <li class="dropdown">
