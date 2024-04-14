@@ -229,4 +229,27 @@ footer {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+/*bliv aktiv*/
+.hero-container-blivaktiv
+{
+    background-color: #ff7e3d;
+    height: 300px;
+}
+.hero-container-blivaktiv h1
+{
+    width: 100%;
+    height: 100%;
+   position: relative;
+    margin:0;
+   top: 140px;
+   left: 45px;
+
+}
+.hero-container-blivaktiv p
+{
+left: 45px; ;
+position: relative;
+top:195px;
+background-color: #ff7e3d;
+}
 
