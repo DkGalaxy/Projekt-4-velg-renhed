@@ -3,11 +3,9 @@
 
 body {
     background-color: white;
-    
 }
 
 * {
-    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -87,7 +85,6 @@ header {
     width: 100%;
     position: fixed;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    z-index: 9999;
 }
 
 .logo {
@@ -99,7 +96,6 @@ header {
 .logo img {
     width: 75px;
     height: auto;
-    
 }
 
 .menu-toggle {
@@ -310,79 +306,123 @@ footer {
 }
 
 /*bliv aktiv*/
-.main
-{
-    background-color: #ff7e3d;
-}
 .hero-container-blivaktiv
 {
     background-color: #ff7e3d;
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    box-sizing: border-box;
-   
+    height: 300px;
 }
-.hero-container-blivaktiv h1 
+.hero-container-blivaktiv h1
 {
+    width: 100%;
+    height: 100%;
    position: relative;
-    margin: 0;
+    margin:0;
    top: 140px;
    left: 45px;
-    width: fit-content;
+
 }
 
 .hero-container-blivaktiv p
 {
-left: 45px;
-margin: 0;
+left: 45px; ;
 position: relative;
 top:195px;
-width: 100%;
-
 }
 /*billede til at blive frivillig på bliv aktiv siden */
-body
-{
-    margin: 0;
-   padding :0;
-}
-.bliv-frivillig
-{
-    background-color: #fffff6;
-    text-align: center;
-    width: 100%;
-}
+
 .active-buttons
 {
     text-align: center;
     margin-bottom: 20px;
-   width: 100%;
 }
 .active-buttons img
 {
-    width: 175px;
-    height: 170px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    width: 100%;
-}
-.active-img-container
-{
-    display: inline-block;
-   margin: 20px;
-    
+    display: block;
+    margin: 0 auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 .active-button
 {
-  
-  display: block;
-  width: fit-content;
+   
     padding: 20px;
-    margin: 0 auto;
+    margin:0 10px;
     background-color: #5da744;
     color: #000000;
     text-decoration: none;
     border-radius: 10px;
- width: fit-content;
 }   
+
+.blivfrivilligcontainer {
+    display: flex;
+    flex-direction: column; /* Elementer skal være vandrette */
+    background-color: #D7EFF5;
+    padding: 80px;
+}
+
+.tekstbox1 {
+    padding-right: 30px;
+}
+
+.imagebox1 {
+    width: 150px;
+    
+}
+
+.tekstbox2 {
+    flex-grow: 1; /* Gør det muligt for tekstbox2 at fylde resten af pladsen */
+    padding-top: 20px; /* Tilføj lidt plads over tekstbox2 */
+    width: 200px;
+}
+
+
+.kontaktcontainer{
+    height: 90px;
+    background-color: #FFC6C9;
+    flex-direction: row;
+    display: flex;
+}
+
+.tekstinput{
+    height: 38px;
+    width: 190px;
+    background-color: white;
+    margin-top: 27px;
+margin-left: 10px;
+
+}
+
+.tekstinputtekst{
+    margin-top: 27px;
+    padding-left: 20px;
+    
+}
+
+.bekraft-knap{
+    width: 55px;
+    height: 38px;
+    margin-top: 27px;
+    margin-left: 10px;
+    background-color: #30B24B;
+}
+.Aktivitetergrid{
+    margin-top: 27px;
+    margin-left: 27px;
+    background-color: #FFFFF6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 410px;
+}
+
+.billedegrid{
+    height: 18  0px;
+    width: 180px;
+}
+
+.tekstgrid{
+    height: 150px;
+    width: 150px;
+}
