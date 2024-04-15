@@ -214,6 +214,7 @@ header {
         margin-right: 20px;
         position: relative;
     }
+
 }
 
 
@@ -269,6 +270,10 @@ header {
     .hero-container img {
         margin-left: 450px;
     }
+
+    .tal-container {
+        flex-direction: row;
+    }
 }
 
 /* Footer */
@@ -279,6 +284,11 @@ footer {
     box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-grid {
     margin-bottom: 10px;
 }
@@ -287,6 +297,14 @@ footer {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+
+    }
+}
+
 /*bliv aktiv*/
 .hero-container-blivaktiv
 {
