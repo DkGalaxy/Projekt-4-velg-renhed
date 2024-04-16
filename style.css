@@ -66,7 +66,6 @@ h4 {
     font-size: 16px;
 }
 
-
 .footer-btn {
     background-color: #EC1323;
     color: white;
@@ -76,7 +75,7 @@ h4 {
     font-family: 'Kanit';
     margin-bottom: 10px;
     border-radius: 5px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .footer-btn i {
@@ -107,6 +106,17 @@ header {
 .logo img {
     width: 75px;
     height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
 }
 
 .menu-toggle {
@@ -148,6 +158,10 @@ header {
     text-align: center;
 }
 
+.menu ul ul {
+    display: none;
+}
+
 .menu ul li {
     margin-bottom: 10px;
     font-family: 'Montserrat';
@@ -169,6 +183,12 @@ header {
     font-size: 18px;
     color: black;
     position: relative;
+}
+
+.menu ul li a.active {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    text-underline-offset: 10px;
 }
 
 .menu ul li a i {
@@ -216,21 +236,55 @@ header {
 
     .menu {
         display: flex;
-        flex-direction: row;
-    }
-
-    .menu ul {
-        display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .menu ul li {
-        margin-right: 20px;
-        position: relative;
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .dropdown-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul ul {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px); /* Adjust as needed */
+        left: 0;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    /* Hide dropdown toggle icons on desktop */
+    .menu ul .dropdown-toggle::after {
+        display: none;
+    }
+
+    /* Adjust dropdown arrow position */
+    .menu ul .dropdown-toggle.active::after {
+        display: inline-block;
+        content: "\f078"; /* Unicode for down arrow icon */
+        margin-left: 5px;
+    }
+
+    /* Dropdown menu style */
+    .dropdown-menu li {
+        background-color: #e5e5e57a;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px;
+    }
+
+    /* Show dropdown menu on hover */
+    .menu ul li:hover > ul {
+        display: block;
     }
 
 }
-
 
 /* Forside */
 .hero-container {
@@ -242,13 +296,13 @@ header {
     width: 100%;
     margin: 0;
     padding-top: 80px;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .hero-container img {
-    width: 75%;
-    height: 75%;
-    margin-left: 70px;
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
     object-fit: contain;
 }
 
@@ -266,27 +320,71 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     background-color: #E5E5E5;
     padding: 40px;
+    text-align: center;
 }
 
-.tal-container img {
-    width: 50%;
+.tal-item {
+    padding: 10px;
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tal-item img {
+    width: 150px;
     height: auto;
 }
 
 @media screen and (min-width: 768px) {
     .hero-container {
         height: 80vh;
+        font-size: 40px;
+        padding-top: 150px;
+        padding-left: 90px;
+    }
+
+    .hero-container p {
+        font-size: 24px;
     }
 
     .hero-container img {
-        margin-left: 450px;
+        width: 60%;
+        height: auto;
+        margin-left: 520px;
+        margin-top: -170px;
     }
 
+    .om-os-container {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .om-os-container p {
+        columns: 2;
+    }
+
+    .seneste-projekter-container {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
     .tal-container {
+        justify-content: center;
+        flex-wrap: wrap;
         flex-direction: row;
+        padding-bottom: 150px;
+    }
+
+    .tal-item {
+        margin: 50px;
+    }
+
+    .tal-item img {
+        width: 220px;
+        height: auto;
     }
 }
 
@@ -314,10 +412,15 @@ footer {
 
 @media screen and (min-width: 768px) {
     .footer-container {
-        flex-direction: row;
-
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        padding-left: 60px;
+        padding-right: 60px;
     }
+    
 }
+
 
 /*bliv aktiv*/
 .hero-container-blivaktiv
