@@ -52,6 +52,15 @@ h3 {
     background-color: black;
 }
 
+.bliv-aktiv-btn {
+    color: white;
+    font-family: 'Montserrat';
+    border: none;
+    background-color: #EC1323;
+    padding: 10px;
+    font-size: 16px;
+}
+
 .footer-btn {
     background-color: #EC1323;
     color: white;
@@ -126,6 +135,10 @@ header {
 .menu.active {
     display: block;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu ul ul {
+    display: none;
 }
 
 .menu ul {
@@ -203,7 +216,8 @@ header {
     }
 
     .menu {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .menu-toggle {
@@ -218,6 +232,41 @@ header {
     .dropdown-menu.active {
         display: flex;
         flex-direction: column;
+    }
+
+    .menu ul ul {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px); /* Adjust as needed */
+        left: 0;
+        background-color: #fff;
+        z-index: 999;
+    }
+
+    /* Hide dropdown toggle icons on desktop */
+    .menu ul .dropdown-toggle::after {
+        display: none;
+    }
+
+    /* Adjust dropdown arrow position */
+    .menu ul .dropdown-toggle.active::after {
+        display: inline-block;
+        content: "\f078"; /* Unicode for down arrow icon */
+        margin-left: 5px;
+    }
+
+    /* Dropdown menu style */
+    .dropdown-menu li {
+        background-color: #e5e5e57a;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px;
+    }
+
+    /* Show dropdown menu on hover */
+    .menu ul li:hover > ul {
+        display: block;
     }
 
 }
