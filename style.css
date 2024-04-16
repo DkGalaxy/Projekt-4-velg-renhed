@@ -4,6 +4,7 @@
 body {
     background-color: white;
    width: 100%;
+   overflow-x: hidden;
 }
 
 * {
@@ -260,11 +261,11 @@ footer {
 
 .hero-container-blivaktiv p
 {
-left: 45px;
-margin: 0;
+ 
+margin: 0 45px;;
 position: relative;
 top:195px;
-width: 100%;
+width: (100%-90px);
 
 }
 /*billede til at blive frivillig på bliv aktiv siden */
@@ -312,4 +313,47 @@ html,body
     text-decoration: none;
     border-radius: 10px;
  width: fit-content;
-}   
+}
+/*donations siden*/
+.contributegridwrap
+{
+    border: 2px solid black;
+    padding: 20px ;
+    max-width: 768px; 
+    height:400px;
+    margin: auto 0;
+   
+  
+}
+.contributecheckbox
+{
+    padding: 20px;
+}
+
+.contributegrid
+{
+    grid-template-columns: 150px 150px 150px;
+    display: grid;
+    grid-gap: 20px;
+    background-color: #000000;
+  
+}
+.støtfasttext
+{
+    display: none;
+}
+.enkeldonationtext
+{
+    display: none;
+}
+.griditem
+{
+    padding: 20px;
+    margin:  0px;
+    background-color: #EC1323;
+    color: #E5E5E5;
+   
+}
+
+
+

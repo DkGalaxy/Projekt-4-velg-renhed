@@ -27,5 +27,31 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  const støtFast = document.getElementById('støt-fast');
+  const enkelDonation = document.getElementById('enkel-donation');
+  const textStøtFast = document.querySelector('.støtfasttext');
+  const textEnkelDonation = document.querySelector('.enkeldonationtext');
+
+  støtFast.addEventListener('change', function() {
+    if (støtFast.checked) {
+      textStøtFast.style.display ='block';
+     } else {
+      textStøtFast.style.display = 'none';
+    }
+  });
+
+  enkelDonation.addEventListener('change', function() {
+    if (enkelDonation.checked) {
+      textEnkelDonation.style.display ='block';
+    } else {
+      textEnkelDonation.style.display ='none';
+    }
+  });
+  function donate()
+  {
+  alert("tilykke med din donation vi sætter stor pris på det"); 
+  }
+});
 
   

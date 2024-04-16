@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3259b7cfe6.js" crossorigin="anonymous"></script>
+    <title>Bliv Aktiv | Stop Spild af Mad</title>
+
+</head>
+<body>
+  <header>
+        <div class="logo">
+            <img src="images/nytlogosort.PNG" alt="Logo">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars" style="color: #000000;"></i>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Forside</a></li>
+                <li class="dropdown">
+                    <a href="om-madspild.html" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om madspild</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="madspild-i-tal.html">Madspild i tal</a></li>
+                        <li><a href="#">Madspildsrapporter</a></li>
+                        <li><a href="#">Hvad kan du gøre?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om organisationen</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Vores resultater</a></li>
+                        <li><a href="#">Vores nyheder</a></li>
+                        <li><a href="#">Bestyrelsen</a></li>
+                        <li><a href="#">Vores venner</a></li>
+                        <li><a href="#">Regnskab</a></li>
+                    </ul>   
+                </li>
+                <li><a href="#">Vores projekter</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="bliv-aktiv.html" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Bliv aktiv</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bliv-frivillig.html">Bliv frivillig</a></li>
+                        <li><a href="donationsside.html">Giv et bidrag</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="hero-containerC">
+        <h1>Giv et bidrag </h1>
+        <p>Stop Spild Af Mad bevægelsen er etableret for alle,
+         der ønsker at bidrage med tanker, ideer og handlinger til,
+          hvordan vi kommer madspild til livs. Et liv med omtanke for hverdagens forbrug er også et liv med omtanke for miljøet.
+         At komme madspild til livs resulterer i mindsket CO2-udledning og derved i mindre drivhuseffekt og dermed i en opbremsning af den globale opvarmning.</p>
+
+         <p>I 2050 er vi 9 milliarder mennesker på Jorden. Til den tid bliver der brug for alle de fødevarer,
+             vi kan producere og vi kan ikke fortsætte med spild af mad,
+              som vi gør i dag, hvor en tredjedel af al verdens mad går til spilde.
+               Madspild er ikke bare et klima- og et miljøproblem,
+                det er også et ressourceproblem</p>
+
+    
+    </div>
+    <div class="contributegridwrap">
+        <h3>dit bidrag gør en forskel</h3>
+        <div class = checkboxescontribute>
+            <label><input type="checkbox" id="støt-fast"> støt fast</label>
+            <label><input type="checkbox" id="enkel-donation"> enkel donation</label>
+        </div>
+        <div class=" contributegrid">
+    <button class="griditem"> 200kr</button>
+    <button class="griditem"> 100 kr</button>
+    <button class="griditem"> 50 kr</button>
+        </div>
+             
+        <p class='contritext'>Behovet for vores hjælp er voksende, og vi er med vores Madoaser allerede et fast og trygt holdepunkt for vores mange frivillige og brugere. For at kunne følge med efterspørgslen, uden at gå på kompromis med hygiejne, sikkerhed og vores frivilliges ydeevne, har vi brug for din hjælp.</p>
+        <p class='støtfasttext'>Derfor beder vi om et fast månedligt beløb ud fra devisen. Så har du 9 kr. eller mere, at bidrage med om måneden, så er du med til at gøre en kæmpe forskel for vores organisation og kampen mod madspild.</p>
+        <p class = 'enkeldonationtext'>Du kan også give en enkelt donation  alle beløb er en hjælp!</p>
+     <label for="donationamount">tilføj beløb du ønsker at donere</label>
+     <input type="number" id="donationamount"  name="donationamount" min="0" step="1">
+     <button onclick="donate()">Donate</button>
+    </div>
+</main>
+
+    <footer>
+        <div class="footer-grid">
+            <h3>Stop Spild Af Mad</h3>
+            <p>Vi er Danmarks største bevægelse mod madspild. Vi har igangsat kampen mod madspild i Danmark og vi bragte Danmarks kamp mod madspild på verdenskortet.</p>
+        </div>
+        <div class="footer-grid">
+            <h3>Bliv aktiv</h3>
+            <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv frivillig</button><br>
+            <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv støttemedlem</button><br>
+            <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv samarbejdspartner</button><br>
+            <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv erhvervspartner</button>
+        </div>
+        <div class="footer-grid">
+            <h3>Følg os</h3>
+            <div class="footer-socialemedier">
+                <i class="fa-brands fa-square-facebook fa-3x"></i>
+                <i class="fa-brands fa-linkedin fa-3x"></i>
+                <i class="fa-brands fa-x-twitter fa-3x"></i><br>
+                <i class="fa-brands fa-square-instagram fa-3x"></i>
+                <i class="fa-brands fa-square-youtube fa-3x"></i>
+                <i class="fa-brands fa-blogger fa-3x"></i>
+            </div>
+        </div>
+        <div class="footer-grid">
+            <h3>Kontakt</h3>
+            <p><b>Stop Spild Af Mad</b></p>
+            <p>Amaliegade 6, 2. tv</p>
+            <p>1256 Købenavn K</p>
+            <p>CVR nr.: 38 21 72 91</p><br>
+            <p>www.stopspildafmad.org</p>
+            <p>info@stopspildafmad.org</p><br>
+            <p>Persondata- og cookiepolitik</p>
+        </div>
+        
+    </footer>
+        
+    </body>
