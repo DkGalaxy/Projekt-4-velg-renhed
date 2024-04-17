@@ -73,17 +73,17 @@
             <label><input type="checkbox" id="enkel-donation"> enkel donation</label>
         </div>
         <div class=" contributegrid">
-    <button class="griditem"> 200kr</button>
-    <button class="griditem"> 100 kr</button>
-    <button class="griditem"> 50 kr</button>
+    <button class="griditem" onclick="donate(200)"> 200kr</button>
+    <button class="griditem" onclick="donate(100)"> 100 kr</button>
+    <button class="griditem" onclick="donate(50)"> 50 kr</button>
         </div>
              
         <p class='contritext'>Behovet for vores hjælp er voksende, og vi er med vores Madoaser allerede et fast og trygt holdepunkt for vores mange frivillige og brugere. For at kunne følge med efterspørgslen, uden at gå på kompromis med hygiejne, sikkerhed og vores frivilliges ydeevne, har vi brug for din hjælp.</p>
         <p class='støtfasttext'>Derfor beder vi om et fast månedligt beløb ud fra devisen. Så har du 9 kr. eller mere, at bidrage med om måneden, så er du med til at gøre en kæmpe forskel for vores organisation og kampen mod madspild.</p>
         <p class = 'enkeldonationtext'>Du kan også give en enkelt donation  alle beløb er en hjælp!</p>
-     <label for="donationamount">tilføj beløb du ønsker at donere</label>
-     <input type="number" id="donationamount"  name="donationamount" min="0" step="1">
      
+        <label for="donationamount">tilføj beløb du ønsker at donere</label>
+     <input type="number" id="donationamount"  name="donationamount" min="0" step="1">
      <button onclick="donate()">Donate</button>
     </div>
 </main>

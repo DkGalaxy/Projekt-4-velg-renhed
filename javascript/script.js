@@ -47,11 +47,32 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       textEnkelDonation.style.display ='none';
     }
+    
   });
-  function donate()
-  {
-  alert("tilykke med din donation vi sætter stor pris på det"); 
-  }
+  
+    
+  
+  
+
+  
 });
+
+
+  // function donate()
+  {
+    let donationamount = document.getElementById('donationamount').value;
+    alert('tilykke med din donation på' + donationamount +'kr vi sætter stor pris på det'); 
+  }
+  function donate(amount)
+   
+  {
+  alert("tilykke med din donation på" + amount +"kr vi sætter stor pris på det"); 
+ }
+ function donate(donationamount)
+ {
+  alert('tilykke med din donation på' + donationamount +'kr vi sætter stor pris på det'); 
+ }
+
+  
 
   
