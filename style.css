@@ -589,58 +589,73 @@ background-color: #FFFFF6;
 }
 .contributegridwrap
 {
-    border: 2px solid black;
+    border: 2px;
     padding: 10px ;
     max-width: 768px; 
     height:600px;
     margin: auto 0;
+    background-color: #000000;
    
   
 }
 .contributegridwrap h3
 {
     margin:30px;
+    color: #E5E5E5;
+  
 }
 .checkboxescontribute label
 {
     padding: 70px;
-   padding: bottom 50px;
-    
-}
-#støtfast
-{
-margin-right: 200px;
-
+    color: #E5E5E5;
 }
 
-.contributegrid
+.contributegrid 
 {
     grid-template-columns: 140px 150px 150px;
     display: grid;
     grid-gap: 20px;
-    background-color: #000000;
-  
+    /* background-color: #000000; */
+    justify-content: center;
+    align-items: center;
+    color:#E5E5E5;
+
+}
+.contritext
+{
+    color: #E5E5E5;
+    margin: 20px;
 }
 .støtfasttext
 {
     display: none;
+    color: #E5E5E5;
 }
 .enkeldonationtext
 {
     display: none;
+    color: #E5E5E5;
 }
 .griditem
 {
-    padding: 20px;
+    padding: 10px 20px;
     margin:  0px;
     background-color: #EC1323;
     color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+
 }
 .active-button
 {
   
-  display: block;  
+  display:block;
 }
+#AbonBtn 
+{
+    display: none;
+}
+
 
 .blivfrivilligcontainer {
     display: flex;

@@ -79,12 +79,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const enkelDonation = document.getElementById('enkel-donation');
   const textStøtFast = document.querySelector('.støtfasttext');
   const textEnkelDonation = document.querySelector('.enkeldonationtext');
-
+  let contributegridH = document.querySelector('.contributegrid');
+  let donationAmountH = document.getElementById('donationamount');
+  let DonateBtnH = document.getElementById('DonateBtn');
+  let donateBtnV = document.getElementById('AbonBtn');
   støtFast.addEventListener('change', function() {
     if (støtFast.checked) {
       textStøtFast.style.display ='block';
+      contributegridH.style.visibility ='hidden';
+      donationAmountH.style.visibility ='hidden';
+      DonateBtnH.style.visibility = 'hidden';
+      donateBtnV.style.display='block';
+
      } else {
       textStøtFast.style.display = 'none';
+      contributegridH.style.visibility ='visible';
+      donationAmountH.style.visibility ='visible';
+      DonateBtnH.style.visibility = 'visible';
+      donateBtnV.style.display='none';
+
     }
   });
 
@@ -115,7 +128,7 @@ function handleDonate()
 
  let message = customMessages[0].message;
 
- for (let i = 1; i < customMessages.length; i++)
+ for (let i = 0; i < customMessages.length; i++)
   {
   if(donationAmount>=customMessages[i].threshold)
     {
@@ -124,7 +137,9 @@ function handleDonate()
   else if (message<= 0)
     {
       alert('det er ikke muligt for dig at donere det beløb');
-    } else {break;}
+    } 
+   
+      else {break;}
     
   } 
 
@@ -137,6 +152,15 @@ alert(message);
 {
  alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
  }
+ 
+ function HandleAbon()
+ {
+alert('Tak fordi du vil støtte stop spild af mad hver måned!');
+ }
+ donateBtnV.addEventListener("click", function()
+ {
+ HandleAbon();
+ });
  
  
  
