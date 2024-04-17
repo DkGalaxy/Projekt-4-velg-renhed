@@ -68,8 +68,14 @@ h4 {
     cursor: pointer;
 }
 
+.bliv-aktiv-btn i {
+    color: white;
+    margin-right: 10px;
+}
+
 .bliv-aktiv-btn:hover {
     background-color: black;
+    color: white;
 }
 
 .footer-btn {
@@ -242,6 +248,8 @@ header {
     .menu {
         display: flex;
         justify-content: flex-end;
+        overflow: visible;
+        padding-right: 30px;
     }
 
     .menu ul {
@@ -269,7 +277,7 @@ header {
         background-color: #30b24a84;
         color: black;
         width: 200px; /* Adjust width as needed */
-        z-index: 1000;
+        z-index: 9999;
     }
 
     .dropdown-menu ul {
@@ -286,6 +294,11 @@ header {
     .dropdown-menu ul li a {
         text-decoration: none;
         color: black;
+        display: block;
+    }
+
+    /* Display dropdown menu on hover */
+    .menu ul li:hover .dropdown-menu {
         display: block;
     }
 }
