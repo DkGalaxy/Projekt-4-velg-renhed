@@ -950,6 +950,7 @@ width: 100%;
 {
 padding: 100px;
 background-color: #FFFFF6;
+margin: auto;
 
 
 }
@@ -966,14 +967,15 @@ background-color: #FFFFF6;
 }
 .contributegridwrap h3
 {
-    margin: auto;
+    margin: 20px 0 20px auto;
     
     color: #E5E5E5;
   
 }
 .checkboxescontribute label
 {
-    padding: 70px;
+    margin: 0 20px 0 14px;
+    padding: 0px;
     color: #E5E5E5;
 }
 
@@ -990,15 +992,17 @@ background-color: #FFFFF6;
 .contritext
 {
     color: #E5E5E5;
-    margin: 20px;
+    margin: 20px 0 20px auto;
 }
 .støtfasttext
 {
     display: none;
     color: #E5E5E5;
+    margin: 20px 0 0 auto;
 }
 .enkeldonationtext
 {
+    margin: 20px 0 20px auto;
     display: none;
     color: #E5E5E5;
 }
@@ -1022,9 +1026,36 @@ background-color: #FFFFF6;
   
   display:block;
 }
+label[for="donationamount"]
+{
+    margin:20px 5px 20px auto;
+    color: white;
+}
+#donationamount
+{
+width: 280px;
+padding: 10px 20px;
+}
+#DonateBtn
+{
+    padding: 10px 20px;
+    margin:  0px 0 0 50px;
+    background-color: #EC1323;
+    color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+}
 #AbonBtn 
 {
     display: none;
+    padding: 10px 20px;
+    margin:  0 auto 0 12px;
+    background-color: #EC1323;
+    color: #E5E5E5;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
 }
 
 
