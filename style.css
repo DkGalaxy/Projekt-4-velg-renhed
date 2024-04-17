@@ -420,9 +420,8 @@ footer {
 }
 
 .kontakt-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .kontakt-container img {
@@ -484,10 +483,18 @@ input[type="submit"]:hover {
     .kontakt-container {
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: 90px;
+        padding-right: 90px;
     }
 
     .kontakt-container img {
         margin-left: 0;
+    }
+
+    .kontakt-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
 }
 
