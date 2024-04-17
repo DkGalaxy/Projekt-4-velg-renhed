@@ -28,41 +28,37 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+
 // Kontakt formular
 function validateForm() {
   let fields = ["name", "email", "message"];
   let errors = {};
 
-  // Validation rules for each field
   let validationRules = {
       "name": "Navn er påkrævet",
       "email": "Email er påkrævet",
       "message": "Besked er påkrævet"
   };
 
-  // Loop through each field
   fields.forEach(function(field) {
       let value = document.getElementById(field).value.trim();
 
-      // Validate each field
       if (value === "") {
-          errors[field] = validationRules[field]; // Use specific validation message
+          errors[field] = validationRules[field]; 
       } else if (field === "email" && !validateEmail(value)) {
           errors[field] = "Ugyldig email-format";
       } else {
-          errors[field] = ""; // Clear error message if field is not empty or valid
+          errors[field] = ""; 
       }
 
-      // Display error messages
       document.getElementById(field + "Error").innerHTML = errors[field];
   });
 
-  // Show confirmation message if there are no errors
   if (Object.values(errors).every(error => error === "")) {
       showConfirmationMessage();
   }
 
-  // Prevent form submission
   return false;
 }
 
