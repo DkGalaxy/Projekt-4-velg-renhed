@@ -65,10 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
   {
   alert("tilykke med din donation på" + amount +"kr vi sætter stor pris på det"); 
  }
- function donate(donationamount)
- {
-  alert('tilykke med din donation på' + donationamount +'kr vi sætter stor pris på det'); 
- }
 
   
 
