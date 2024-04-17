@@ -107,22 +107,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   
-function handleDonate() {
+function handleDonate() 
+{
   let donationIndput = document.querySelector('#donationamount');
   let donationAmount = donationIndput.value;
- 
-  alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
-}
-  function donate(amount)
-   
+ let customMessages = 
+  [
+    {threshold: 0, message: 'tak for din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 50, message: 'Wow! Tak for din gavmilde donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 100, message: '"Fantastisk! Din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 200, message: 'Vi er dybt taknemmelige for din generøsitet! Tillykke med din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'}
+  ];
+
+ let message = customMessages[0].message;
+
+ for (let i = 1; i < customMessages.length; i++)
   {
- 
-  alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
+  if(donationAmount>=customMessages[i].threshold)
+    {
+      message = customMessages[i].message
+    }
+  else if (message<= 0)
+    {
+      alert('det er ikke muligt for dig at donere det beløb');
+    } else {break;}
+    
+  } 
+
+alert(message);
+}
+
+//   alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
+// }
+  function donate(amount)
+{
+ alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
  }
  
  
- 
-
-  
-
-  
