@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3259b7cfe6.js" crossorigin="anonymous"></script>
+    <title>Forside | Stop Spild af Mad</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/nytlogosort.PNG" alt="Logo"></a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars" style="color: #000000;"></i>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="active">Forside</a></li>
+                <li class="dropdown">
+                    <a href="om-madspild.html" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om madspild</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="madspild-i-tal.html">Madspild i tal</a></li>
+                        <li><a href="#">Madspildsrapporter</a></li>
+                        <li><a href="#">Hvad kan du gøre?</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om organisationen</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Vores resultater</a></li>
+                        <li><a href="#">Vores nyheder</a></li>
+                        <li><a href="#">Bestyrelsen</a></li>
+                        <li><a href="#">Vores venner</a></li>
+                        <li><a href="#">Regnskab</a></li>
+                    </ul>   
+                </li>
+                <li><a href="#">Vores projekter</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="bliv-aktiv.html" class="bliv-aktiv-btn" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Bliv aktiv</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bliv-frivillig.html">Bliv frivillig</a></li>
+                        <li><a href="donationsside.html">Giv et bidrag</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="madspild-i-tal-intro">
+            <h1>Madspild i tal</h1>
+            <div class="madspild-i-tal-p1">
+                <p>Det totale årlige madspild i hele værdikæden fra jord til bord i Danmark ligger på 873.014 ton som svarer til 3,8% af den samlede CO2-udledning, der hvert år udledes fra Danmark.</p>
+            </div>
+
+            <div id="chartContainer"></div>
+            <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+            <div class="madspild-i-tal-p2">
+                <p>I 2006 gennemførte Områdechef i Landbrug & Fødevarer Klaus Jørgensen de første beregninger om husholdningernes madspild. I 2008, inspireret af beregninger fra Klaus Jørgensen, igangsatte Selina Juul forbrugerbevægelsen Stop Spild Af Mad. I slutningen af 2008 har detailkæden REMA 1000 Danmark, med inspiration fra forbrugerbevægelsen Stop Spild Af Mad, afskaffet mængderabatter og indført styk-rabatter i alle kædens butikker. Disse tre faktorer gav startskuddet til en årelang kamp mod madspild i Danmark og udenfor Danmarks grænser. Sidenhen er kampen mod madspild blevet en folkebevægelse, og politikere, organisationer, detailkæder, kantiner, virksomheder og forbrugere har lige siden arbejdet aktivt med at forebygge og reducere madspild i Danmark.
+                    <br><br>Stort set hele den danske befolkning har i dag et øget fokus på madspild. Ifølge en gallupundersøgelse fra Kantar Public for Stop Spild Af Mad fra 2023 angiver hele 94% af danskerne, at der er kommet mere fokus på madspild i dag end for 15 år siden. Kun 3% svarer “nej” og 3% svarer “ved ikke”.
+                    </p>
+            </div>
+
+
+            <div class="definition-af-madspild">
+                <h2>Definition af madspild</h2>
+                <p>Madaffald er alt affald, der stammer fra mad. Madaffald kan opdeles i to: madspild og øvrigt madaffald. Madspild er fødevarer, der kunne være spist, men i stedet er blevet smidt ud. Øvrigt madaffald er de dele af fødevarer, der ikke er egnet til at spise. Eksempler på madspild er brød, hel frugt og grønt og middagsrester. Eksempler på øvrigt madaffald er æggeskaller, osteskorper, kaffegrums og kernehuse.
+                    <br><br>
+                    kilde: Miljøstyrelsen, rapporten ”Kortlægning af madaffald i servicesektoren – Detailhandel, restauranter og storkøkkener”</p>
+                    <img src="img/wave-lysgron.svg" alt="wave">
+            </div> 
+        </div>
+
+       
+
+
+        <div class="madspild-i-tal-dd-intro">
+            <p>Problemet med madspild er dog langt fra at være et overstået kapitel for Danmark og verden generelt. Stop Spild af Mad har samlet statistik, og lavet en oversigt over hvordan tallene for madspild ser ud i dag både nationalt og internationalt, som kan læses nedenunder.</p>
+        </div>
+        <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Årligt madspild i Danmark, estimat i %:
+                <span class="chevron"></span>
+              </button>
+              <div class="accordion-content">
+                <p>100% = Det totale madspild<br> 47,2% = Fødevareindustrien<br>28,8% = Husholdninger<br>11,7% = Detail og engros<br>5,5% = Primærproduktion<br>5,1% = Restaurationsbranchen og storkøkkener<br><br><br>
+                    kilde:<br> Ministeriet for Fødevarer, Landbrug og Fiskeri, Miljøstyrelsen, Landbrug & Fødevarer, Kantar Public for Stop Spild Af Mad
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-btn">
+                Madspildets pris i Danmark:
+                <span class="chevron"></span>
+              </button>
+              <div class="accordion-content">
+                <p>Madspild koster danskerne 13,5 milliarder kroner om året inkl. moms og afgifter.
+                    <br><br><br>
+                    kilde: <br>Landbrug & Fødevarer</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                  Danskernes madspild:
+                  <span class="chevron"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>Hver dansker smider 47 kg spiselig mad ud om året. Samlet set udgør madspild 42 kg pr. person pr. år i enfamilieboliger og 59 kg pr. person pr. år i etageboliger.
+                    <br><br><br>
+                    kilde: <br>Landbrug & Fødevarer
+                    <br><br><br>
+                    Madspilds Top 10 og deres respektive andel af total madspild:
+                    <br><br>
+                    Middagsrester indeholdende fisk, fjerkræ og kød (inkl. rent, tilberedt kød) (forarbejdet)  14%<br>
+                    Friske grøntsager (ikke forarbejdet)  13%<br>
+                    Brød og kager med datomærkning  12%<br>
+                    Frisk frugt (ikke forarbejdet)  9%<br>
+                    Kartofler og grøntsager (forarbejdet)  8%<br>
+                    Mejeriprodukter (ikke forarbejdet)  5%<br>
+                    Pålæg af fisk, fjerkræ, kød (ikke forarbejdet)  4%<br>
+                    Andre tørvarer (slik, nødder, rosiner mv.) (ikke forarbejdet)  4%<br>
+                    Fersk og frossen fisk, fjerkræ og kød (ikke forarbejdet)  3%<br>
+                    Brød med pålæg  herunder også madpakker (forarbejdet)  3%<br>
+                    Ikke forarbejdede friske fødevarer fra detailhandlen udgør ca. 46% af madspildets top 10 i husholdningen.<br>
+                    <br><br><br>
+                    kilde: <br>Landbrug & Fødevarer</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-btn">
+                  Globalt madspild:
+                  <span class="chevron"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>En tredjedel af alt mad går til spilde. Det globale madspild udgør 1,3 milliarder ton om året og er nok til at brødføde 3 milliarder mennesker.
+                    <br><br>
+                    kilde: <br>FN's Levnedsmiddel- og Landbrugsorganisation FAO, rapport ”Global Food Losses and Food Waste”
+                    <br><br>
+                    I år 2050 runder verdens befolkning 9 mia. mennesker - til den tid skal verdens fødevareproduktion øges med 70% for at efterkomme behovet. Reduktion af madspild og udnyttelse af den producerede mad er derfor blandt de centrale forudsætninger.
+                    <br><br>
+                    kilde: <br>FN's Levnedsmiddel- og Landbrugsorganisation FAO, rapport ”Global Food Losses and Food Waste”
+                    <br><br>
+                    En af del-målene blandt FN's 17 nye mål for fremtiden, Sustainable Development Goals, handler om madspild: “Goal 12: Ensure sustainable consumption and production patterns”. Del-målet 12.3 indebærer at i 2030 skal det globale madspild per indbygger halveres på detail- og forbrugerniveauer - samt skal madspild reduceres i produktions- og forsyningskæder, herunder fødevaretab efter høsten (post harvest losses).
+                    <br><br>
+                    kilde: <br>FN
+                    <br><br>
+                    I udviklingslandene sker 40% af madspild ved efter-høst og i forarbejdnings led (fødevaretab), mens i de industrialiserede lande sker mere end 40% af madspild ved detail- og forbruger led.
+                    <br><br>
+                    kilde:<br>FN's Levnedsmiddel- og Landbrugsorganisation FAO, rapport ”Global Food Losses and Food Waste”
+                    <br><br>
+                    Madspild er verdens tredjestørste CO2-synder. Ubrugte madvarer er skyld i 3,3 milliarder ton CO2-udledning hvert år. Hvis man sammenligner den CO2-udledning, som madspild er skyld i, vil det kun være USA og Kina, der udleder mere.
+                    <br><br>
+                    kilde: <br>FN's Levnedsmiddel- og Landbrugsorganisation FAO, rapport ”Food Wastage Footprint: Impacts on Natural Resources”
+                    <br><br>
+                    Europa-Parlamentet fik vedtaget at andelen af madspild skal halveres inden udgangen af 2030.
+                    <br><br>
+                    kilde: <br>Europa-Parlamentet
+                    <br><br>
+                    I år 2030 skal USA's madspild være halveret i forhold til i dag.
+                    <br><br><br>
+                    kilde: <br>U.S. Department of Agriculture og Environmental Protection Agency</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <h3>Stop Spild Af Mad</h3>
+                <p>Vi er Danmarks største bevægelse mod madspild. Vi har igangsat kampen mod madspild i Danmark og vi bragte Danmarks kamp mod madspild på verdenskortet.</p>
+            </div>
+            <div class="footer-grid">
+                <h3>Bliv aktiv</h3>
+                <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv frivillig</button><br>
+                <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv støttemedlem</button><br>
+                <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv samarbejdspartner</button><br>
+                <button class="footer-btn"><i class="fa-solid fa-chevron-right"></i>Bliv erhvervspartner</button>
+            </div>
+            <div class="footer-grid">
+                <h3>Følg os</h3>
+                <div class="footer-socialemedier">
+                    <i class="fa-brands fa-square-facebook fa-3x"></i>
+                    <i class="fa-brands fa-linkedin fa-3x"></i>
+                    <i class="fa-brands fa-x-twitter fa-3x"></i><br>
+                    <i class="fa-brands fa-square-instagram fa-3x"></i>
+                    <i class="fa-brands fa-square-youtube fa-3x"></i>
+                    <i class="fa-brands fa-blogger fa-3x"></i>
+                </div>
+            </div>
+            <div class="footer-grid">
+                <h3>Kontakt</h3>
+                <p><b>Stop Spild Af Mad</b></p>
+                <p>Amaliegade 6, 2. tv</p>
+                <p>1256 Købenavn K</p>
+                <p>CVR nr.: 38 21 72 91</p><br>
+                <p>www.stopspildafmad.org</p>
+                <p>info@stopspildafmad.org</p><br>
+                <p>Persondata- og cookiepolitik</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

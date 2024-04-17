@@ -171,6 +171,90 @@ alert(message);
      currentSlide(index + 1);
    });
  });
+
+
+
+ // Accordion - om madspild og madspild i tal
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+    const btn = item.querySelector('.accordion-btn');
+    const content = item.querySelector('.accordion-content');
+    const chevron = item.querySelector('.chevron');
+
+    btn.addEventListener('click', function() {
+      accordionItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.querySelector('.accordion-btn').classList.remove('active');
+          otherItem.querySelector('.accordion-content').style.display = 'none';
+          otherItem.querySelector('.chevron').classList.remove('rotate');
+        }
+      });
+
+      btn.classList.toggle('active');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      chevron.classList.toggle('rotate');
+    });
+  });
+});
+
+
+//Pie chart
+
+window.onload = function() {
+
+  let chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      data: [{
+          type: "pie",
+          startAngle: 270,
+          yValueFormatString: "##0.00\"%\"",
+          indexLabel: "{label} {y}",
+          indexLabelFontSize: 9,
+          colorSet: "customColorSet", 
+          dataPoints: [
+              {y: 52.03, label: "Fødevareindustri"},
+              {y: 26.09, label: "Husholdninger"},
+              {y: 10.09, label: "Detail og engros"},
+              {y: 4.09, label: "Primærproduktion"},
+              {y: 4.08, label: "Servicesektor"}
+          ],
+          click: function(e) {
+              // Tjekker om pie slice har "eksploderet"
+              let dataPoints = e.dataSeries.dataPoints;
+              for (let i = 0; i < dataPoints.length; i++) {
+                  if (dataPoints[i].exploded) {
+                      // Bevæger slice tilbage til oprindelige position
+                      dataPoints[i].exploded = false;
+                  }
+              }
+              // Gør at stykket eksploderer
+              e.dataPoint.exploded = true;
+              chart.render();
+          }
+      }]
+  });
+
+  // Farver
+  let customColorSet = [
+      "#9AE0F1", // Blå
+      "#FFCC00", // Gul
+      "#FF0000", // Rød
+      "#FA5CAB", // Pink
+      "#FF8F00"  // Orange
+];
+
+  // Farver på chart
+  chart.options.colorSet = "customColorSet";
+  chart.options.data[0].colorSet = "customColorSet";
+
+  // Farver registreret til canvasjs
+  CanvasJS.addColorSet("customColorSet", customColorSet);
+
+
+  chart.render();
+}
   
 
   
