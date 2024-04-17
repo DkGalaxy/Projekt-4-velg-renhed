@@ -328,10 +328,6 @@ header {
     height: auto;
 }
 
-.kontakt-container {
-    background-color: black;
-}
-
 @media screen and (min-width: 768px) {
     .hero-container {
         height: 80vh;
@@ -415,6 +411,67 @@ footer {
     
 }
 
+/* Kontakt formular */
+.kontakt-container {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat';
+    padding: 40px;
+}
+
+.navn-email-gruppe {
+    display: flex;
+    flex-direction: column;
+}
+
+.besked-gruppe {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: #EC1323;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+}
+
+#confirmationMessage {
+    color: #5da744;
+    margin-top: 10px;
+    display: none; 
+}
+
+@media screen and (min-width: 768px) {
+    
+}
 
 /*bliv aktiv*/
 .hero-container-blivaktiv

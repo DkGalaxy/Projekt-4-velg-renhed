@@ -28,6 +28,57 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// Kontakt formular
+function validateForm() {
+  var fields = ["name", "email", "message"];
+  var errors = {};
+
+  // Validation rules for each field
+  var validationRules = {
+      "name": "Navn er påkrævet",
+      "email": "Email er påkrævet",
+      "message": "Besked er påkrævet"
+  };
+
+  // Loop through each field
+  fields.forEach(function(field) {
+      var value = document.getElementById(field).value.trim();
+
+      // Validate each field
+      if (value === "") {
+          errors[field] = validationRules[field]; // Use specific validation message
+      } else if (field === "email" && !validateEmail(value)) {
+          errors[field] = "Ugyldig email-format";
+      } else {
+          errors[field] = ""; // Clear error message if field is not empty or valid
+      }
+
+      // Display error messages
+      document.getElementById(field + "Error").innerHTML = errors[field];
+  });
+
+  // Show confirmation message if there are no errors
+  if (Object.values(errors).every(error => error === "")) {
+      showConfirmationMessage();
+  }
+
+  // Prevent form submission
+  return false;
+}
+
+function validateEmail(email) {
+  var re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+
+function showConfirmationMessage() {
+  var confirmationMessage = document.getElementById("confirmationMessage");
+  confirmationMessage.style.display = "block";
+}
+
+
+
+
 // Bliv aktiv
 document.addEventListener('DOMContentLoaded', function() {
   const støtFast = document.getElementById('støt-fast');
