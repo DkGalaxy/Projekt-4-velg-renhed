@@ -959,14 +959,15 @@ background-color: #FFFFF6;
     padding: 10px ;
     max-width: 768px; 
     height:600px;
-    margin: auto 0;
+    margin: auto;
     background-color: #000000;
    
   
 }
 .contributegridwrap h3
 {
-    margin:30px;
+    margin: auto;
+    
     color: #E5E5E5;
   
 }
@@ -981,7 +982,6 @@ background-color: #FFFFF6;
     grid-template-columns: 140px 150px 150px;
     display: grid;
     grid-gap: 20px;
-    /* background-color: #000000; */
     justify-content: center;
     align-items: center;
     color:#E5E5E5;
@@ -1005,12 +1005,17 @@ background-color: #FFFFF6;
 .griditem
 {
     padding: 10px 20px;
-    margin:  0px;
+    margin-top:  10px;
     background-color: #EC1323;
     color: #E5E5E5;
     border: none;
     border-radius: 5px;
 
+}
+.griditem:hover
+{
+    opacity: .7;
+    size: 2px;
 }
 .active-button
 {
