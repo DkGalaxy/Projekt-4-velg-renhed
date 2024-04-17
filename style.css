@@ -569,3 +569,242 @@ width: 100%;
   
   display: block;  
 }
+
+.blivfrivilligcontainer {
+    display: flex;
+    flex-direction: column; 
+    background-color: #CFEEB7;
+    padding: 40px;
+    align-items: center;
+    padding-top: 110px;
+}
+
+
+.tekstbox1 {
+
+    width: 100%;
+}
+
+.imagebox1 {
+    width: 150px;
+    
+}
+
+.tekstbox2 {
+    flex-grow: 1; 
+    padding-top: 20px; 
+    width: 200px;
+}
+
+
+
+.Aktivitetergrid{
+    margin-top: 27px;
+    background-color: #FFFFF6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 410px;
+}
+
+.billedegrid{
+    height: 180px;
+    width: 180px;
+}
+
+.tekstgrid{
+    height: 150px;
+    width: 150px;
+    margin-left: 40px;
+}
+
+.teksttekst{
+    padding-left: 40px;
+}
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+ 
+  .mySlides {
+    display: none;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  .text {
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -160px
+  }
+  
+  .tekstslide{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #000000;
+}
+  
+
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 40px
+  }
+  
+  .active, .dot:hover {
+    background-color: #CFEEB7;
+  }
+  
+.dotscontainer{
+    text-align: center;
+    margin-bottom: -70px
+}
+
+@media screen and (min-width: 768px){
+    .blivfrivilligcontainer {
+    padding-top: 170px;
+    display: flex;
+    flex-direction: row; 
+    background-color: #CFEEB7;
+    padding: 80px;
+    
+    
+
+    }
+    
+    .tekstbox1 {
+        padding-right: 30px;
+        width: 500px;      
+    }
+    
+    .imagebox1 {
+    height: 400px;
+    width: auto;
+    }
+    
+    .tekstbox2 {
+        flex-grow: 1; 
+        margin-bottom: 100px; 
+        width: 200px;
+    }
+    
+    
+    
+    .kontaktcontainer{
+        height: 140px;
+        background-color: #030303;
+        flex-direction: row;
+        display: flex;
+    }
+    
+    .tekstinput{
+        height: 58px;
+        width: 750px;
+        background-color: white;
+        margin-top: 48px;
+        margin-left: 10px;
+    
+    }
+    
+    .tekstinputtekst{
+        margin-top: 27px;
+        padding-left: 80px;
+        margin-top: 58px;
+    }
+    
+    .bekraft-knap{
+        width: 175px;
+        height: 58px;
+        margin-top: 27px;
+        padding-left: 200px;
+        margin-top: 48px;
+    }
+    .Aktivitetergrid{
+        margin-top: 27px;
+        background-color: #FFFFF6;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    
+        height: 530px;
+    }
+    
+    .billedegrid{
+        height: 400px;
+        width: auto; 
+        
+    }
+    
+    .tekstgrid{
+        height: 150px;
+        width: auto;
+        margin-left:80px;
+        
+        
+    }
+
+    .text {
+        color: #000000;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: -100px
+      }
+    
+      .teksttekst{
+        padding-top: 50px;
+        padding-left: 80px;
+    }
+    .tekstslide{
+        font-family: 'Montserrat';
+        font-size: 14px;
+        color: #000000;
+        margin-right: 80px;
+    }
+}
