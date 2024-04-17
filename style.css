@@ -244,35 +244,50 @@ header {
         justify-content: flex-end;
     }
 
-    .menu ul li {
-        display: inline-block;
-        margin-right: 40px;
-    }
-
-    .dropdown-menu.active {
+    .menu ul {
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
-    .menu ul ul {
-        display: none;
-        position: absolute;
-        top: calc(100% + 10px); /* Adjust as needed */
-        left: 0;
-        background-color: #fff;
-        z-index: 999;
+    .menu ul li {
+        margin-right: 20px;
+        position: relative; /* Ensure proper positioning of dropdown */
     }
 
     .menu ul li:hover .dropdown-menu {
-        /* Hide the dropdown menu when hovering on small screens */
-        display: none;
-    }
-
-    .menu ul li .dropdown-menu.active {
-        /* Display the dropdown menu when the parent menu item is clicked on small screens */
         display: block;
     }
 
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #30b24a84;
+        color: black;
+        width: 200px; /* Adjust width as needed */
+        z-index: 1000;
+    }
+
+    .dropdown-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .dropdown-menu ul li {
+        background-color: #e5e5e5;
+        padding: 10px;
+    }
+
+    .dropdown-menu ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
 }
 
 /* Forside */
