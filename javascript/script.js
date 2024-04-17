@@ -55,16 +55,22 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-  // function donate()
-  {
-    let donationamount = document.getElementById('donationamount').value;
-    alert('tilykke med din donation på' + donationamount +'kr vi sætter stor pris på det'); 
-  }
+  
+function handleDonate() {
+  let donationIndput = document.querySelector('#donationamount');
+  let donationAmount = donationIndput.value;
+  console.log("Donation amount:", donationAmount);
+  alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
+}
   function donate(amount)
    
   {
-  alert("tilykke med din donation på" + amount +"kr vi sætter stor pris på det"); 
+    console.log('donation from grid',amount);
+  alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
  }
+ 
+ 
+ 
 
   
 
