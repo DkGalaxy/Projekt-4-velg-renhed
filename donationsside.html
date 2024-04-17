@@ -12,14 +12,14 @@
 <body>
   <header>
         <div class="logo">
-            <a href="index.html"><img src="images/nytlogosort.PNG" alt="Logo"></a>
+            <img src="images/nytlogosort.PNG" alt="Logo">
         </div>
         <div class="menu-toggle">
             <i class="fas fa-bars" style="color: #000000;"></i>
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="index.html">Forside</a></li>
+                <li><a href="#">Forside</a></li>
                 <li class="dropdown">
                     <a href="om-madspild.html" class="dropdown-toggle"><i class="fa-solid fa-chevron-right dropdown-icon"></i>Om madspild</a>
                     <ul class="dropdown-menu">
@@ -82,9 +82,10 @@
         <p class='støtfasttext'>Derfor beder vi om et fast månedligt beløb ud fra devisen. Så har du 9 kr. eller mere, at bidrage med om måneden, så er du med til at gøre en kæmpe forskel for vores organisation og kampen mod madspild.</p>
         <p class = 'enkeldonationtext'>Du kan også give en enkelt donation  alle beløb er en hjælp!</p>
      
-        <label for="donationamount">tilføj beløb du ønsker at donere</label>
-     <input type="number" id="donationamount"  name="donationamount" min="0" step="1">
-     <button onclick="donate()">Donate</button>
+        <label for="donationamount">Tilføj beløb du ønsker at donere</label>
+<input type="number" id="donationamount" name="donationamount" min="0" step="1">
+<button onclick="handleDonate()">Donate</button>
+
     </div>
 </main>
 
