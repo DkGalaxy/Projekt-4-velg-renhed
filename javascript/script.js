@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+// Bliv aktiv
 document.addEventListener('DOMContentLoaded', function() {
   const støtFast = document.getElementById('støt-fast');
   const enkelDonation = document.getElementById('enkel-donation');
@@ -49,11 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
   });
-  
-    
-  
-  
-
   
 });
 
