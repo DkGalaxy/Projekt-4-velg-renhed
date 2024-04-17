@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Kontakt formular
 function validateForm() {
-  var fields = ["name", "email", "message"];
-  var errors = {};
+  let fields = ["name", "email", "message"];
+  let errors = {};
 
   // Validation rules for each field
-  var validationRules = {
+  let validationRules = {
       "name": "Navn er påkrævet",
       "email": "Email er påkrævet",
       "message": "Besked er påkrævet"
@@ -42,7 +42,7 @@ function validateForm() {
 
   // Loop through each field
   fields.forEach(function(field) {
-      var value = document.getElementById(field).value.trim();
+      let value = document.getElementById(field).value.trim();
 
       // Validate each field
       if (value === "") {
@@ -67,16 +67,14 @@ function validateForm() {
 }
 
 function validateEmail(email) {
-  var re = /\S+@\S+\.\S+/;
+  const re = /\S+@\S+\.\S+/;
   return re.test(email);
 }
 
 function showConfirmationMessage() {
-  var confirmationMessage = document.getElementById("confirmationMessage");
+  const confirmationMessage = document.getElementById("confirmationMessage");
   confirmationMessage.style.display = "block";
 }
-
-
 
 
 // Bliv aktiv
@@ -120,33 +118,6 @@ function handleDonate() {
   alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
  }
  
-// slideshowjava
- let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = Array.from(document.getElementsByClassName("mySlides")); // Convert to true array
-  let dots = Array.from(document.getElementsByClassName("dot")); // Convert to true array
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].classList.add("active");
-}
  
  
 
