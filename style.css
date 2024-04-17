@@ -264,29 +264,13 @@ header {
         z-index: 999;
     }
 
-    /* Hide dropdown toggle icons on desktop */
-    .menu ul .dropdown-toggle::after {
+    .menu ul li:hover .dropdown-menu {
+        /* Hide the dropdown menu when hovering on small screens */
         display: none;
     }
 
-    /* Adjust dropdown arrow position */
-    .menu ul .dropdown-toggle.active::after {
-        display: inline-block;
-        content: "\f078"; /* Unicode for down arrow icon */
-        margin-left: 5px;
-    }
-
-    /* Dropdown menu style */
-    .dropdown-menu li {
-        background-color: #e5e5e57a;
-    }
-
-    .dropdown-menu li a {
-        padding: 10px;
-    }
-
-    /* Show dropdown menu on hover */
-    .menu ul li:hover > ul {
+    .menu ul li .dropdown-menu.active {
+        /* Display the dropdown menu when the parent menu item is clicked on small screens */
         display: block;
     }
 
