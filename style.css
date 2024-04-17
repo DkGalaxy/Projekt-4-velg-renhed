@@ -419,6 +419,18 @@ footer {
     padding: 40px;
 }
 
+.kontakt-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.kontakt-container img {
+    width: 75%;
+    height: auto;
+    margin-left: 50px;
+}
+
 .navn-email-gruppe {
     display: flex;
     flex-direction: column;
@@ -469,7 +481,14 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 768px) {
-    
+    .kontakt-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .kontakt-container img {
+        margin-left: 0;
+    }
 }
 
 /*bliv aktiv*/

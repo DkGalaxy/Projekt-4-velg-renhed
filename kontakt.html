@@ -10,23 +10,26 @@
 <body>
     <div class="kontakt-container">
         <h2>Ønsker du at blive frivillig? Så tøv ikke med at kontakte os!</h2>
-            <form id="contactForm" onsubmit="return validateForm()">
-                <div class="navn-email-gruppe">
-                    <label for="name">Navn:</label>
-                    <input type="text" id="name" name="name">
-                    <span id="nameError" class="error"></span><br>
+        <div class="kontakt-grid">
+            <img src="images/frivillig.PNG" alt="Illustration af frivillig">
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <div class="navn-email-gruppe">
+                        <label for="name">Navn:</label>
+                        <input type="text" id="name" name="name">
+                        <span id="nameError" class="error"></span><br>
 
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
-                    <span id="emailError" class="error"></span><br>
-                </div>
-                <div class="besked-gruppe">
-                    <label for="message">Besked:</label>
-                    <textarea id="message" name="message"></textarea>
-                    <span id="messageError" class="error"></span><br>
-                </div>
-                <input type="submit" value="Send"><div id="confirmationMessage" style="display: none;">Din besked er blevet sendt! Tak for din interesse!</div>
-            </form>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <span id="emailError" class="error"></span><br>
+                    </div>
+                    <div class="besked-gruppe">
+                        <label for="message">Besked:</label>
+                        <textarea id="message" name="message"></textarea>
+                        <span id="messageError" class="error"></span><br>
+                    </div>
+                    <input type="submit" value="Send"><div id="confirmationMessage" style="display: none;">Din besked er blevet sendt! Tak for din interesse!</div>
+                </form>
+            </div>
         
     </div>
 </body>
