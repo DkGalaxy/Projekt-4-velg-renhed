@@ -580,24 +580,42 @@ width: 100%;
  width: fit-content;
 } 
 /*donations siden*/
+.hero-containerC
+{
+padding: 100px;
+background-color: #FFFFF6;
+
+
+}
 .contributegridwrap
 {
     border: 2px solid black;
-    padding: 20px ;
+    padding: 10px ;
     max-width: 768px; 
-    height:400px;
+    height:600px;
     margin: auto 0;
    
   
 }
-.contributecheckbox
+.contributegridwrap h3
 {
-    padding: 20px;
+    margin:30px;
+}
+.checkboxescontribute label
+{
+    padding: 70px;
+   padding: bottom 50px;
+    
+}
+#støtfast
+{
+margin-right: 200px;
+
 }
 
 .contributegrid
 {
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 140px 150px 150px;
     display: grid;
     grid-gap: 20px;
     background-color: #000000;
