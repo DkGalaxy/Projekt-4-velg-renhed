@@ -662,7 +662,7 @@ width: 100%;
   }
   
 
-  .prev, .next {
+  .tilbage, .næste {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -678,13 +678,13 @@ width: 100%;
   }
   
   
-  .next {
+  .næste {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
   
-  .prev:hover, .next:hover {
+  .tilbage:hover, .næste:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
