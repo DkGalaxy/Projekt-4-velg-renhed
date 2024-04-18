@@ -58,7 +58,7 @@ h4 {
     background-color: #000000;
 }
 
-.bliv-aktiv-btn {
+#bliv-aktiv-btn {
     color: white;
     font-family: 'Montserrat';
     border: none;
@@ -68,12 +68,12 @@ h4 {
     cursor: pointer;
 }
 
-.bliv-aktiv-btn i {
+#bliv-aktiv-btn i {
     color: white;
     margin-right: 10px;
 }
 
-.bliv-aktiv-btn:hover {
+#bliv-aktiv-btn:hover {
     background-color: black;
     color: white;
 }
@@ -87,7 +87,7 @@ h4 {
     font-family: 'Kanit';
     margin-bottom: 10px;
     border-radius: 5px;
-    z-index: 999;
+    
 }
 
 .footer-btn i {
@@ -262,7 +262,7 @@ header {
 
     .menu ul li {
         margin-right: 20px;
-        position: relative; 
+        position: relative; /* Ensure proper positioning of dropdown */
     }
 
     .menu ul li:hover .dropdown-menu {
@@ -274,10 +274,9 @@ header {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #CFEEB7;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        background-color: #30b24a84;
         color: black;
-        width: 200px; 
+        width: 200px; /* Adjust width as needed */
         z-index: 9999;
     }
 
@@ -896,7 +895,7 @@ input[type="submit"]:hover {
 /*bliv aktiv*/
 .hero-container-blivaktiv
 {
-    background-color: #ff7e3d;
+    background-color: #CFEEB7;
     height: 300px;
 }
 .hero-container-blivaktiv h1
@@ -914,8 +913,6 @@ input[type="submit"]:hover {
 {
  
 margin: 0 45px;;
-position: relative;
-top:195px;
 width: 100%;
 
 }
@@ -924,6 +921,7 @@ width: 100%;
 .active-buttons
 {
     text-align: center;
+    border: none;
     margin-bottom: 20px;
 }
 .active-buttons img
@@ -938,14 +936,20 @@ width: 100%;
 .active-button
 {
    
-    padding: 20px;
-    margin:0 10px;
-    background-color: #5da744;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 10px;
- width: fit-content;
+    background-color: #EC1323;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kanit';
+    margin:auto;
+    border-radius: 5px;
+    width: 200px;
 } 
+.active-button:hover
+{
+
+}
 /*donations siden*/
 .hero-containerC
 {
@@ -978,6 +982,7 @@ margin: auto;
     margin: 0 20px 0 14px;
     padding: 0px;
     color: #E5E5E5;
+    font-family:'Montserrat';
 }
 
 .contributegrid 
@@ -1029,7 +1034,7 @@ margin: auto;
 }
 label[for="donationamount"]
 {
-    margin:20px 5px 20px auto;
+    margin:20px 5% 20px auto;
     color: white;
 }
 #donationamount
