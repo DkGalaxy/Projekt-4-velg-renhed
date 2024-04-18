@@ -74,7 +74,8 @@ function showConfirmationMessage() {
 
 
 // Bliv aktiv
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
   const støtFast = document.getElementById('støt-fast');
   const enkelDonation = document.getElementById('enkel-donation');
   const textStøtFast = document.querySelector('.støtfasttext');
@@ -109,51 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
   });
-  
-});
-
-
-  
-function handleDonate() 
-{
-  let donationIndput = document.querySelector('#donationamount');
-  let donationAmount = donationIndput.value;
- let customMessages = 
-  [
-    {threshold: 0, message: 'tak for din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
-    {threshold: 50, message: 'Wow! Tak for din gavmilde donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
-    {threshold: 100, message: '"Fantastisk! Din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
-    {threshold: 200, message: 'Vi er dybt taknemmelige for din generøsitet! Tillykke med din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'}
-  ];
-
- let message = customMessages[0].message;
-
- for (let i = 0; i < customMessages.length; i++)
-  {
-  if(donationAmount>=customMessages[i].threshold)
-    {
-      message = customMessages[i].message
-    }
-  else if (message<= 0)
-    {
-      alert('det er ikke muligt for dig at donere det beløb');
-    } 
-   
-      else {break;}
-    
-  } 
-
-alert(message);
-}
-
-//   alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
-// }
-  function donate(amount)
-{
- alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
- }
- 
- function HandleAbon()
+  function HandleAbon()
  {
 alert('Tak fordi du vil støtte stop spild af mad hver måned!');
  }
@@ -161,45 +118,11 @@ alert('Tak fordi du vil støtte stop spild af mad hver måned!');
  {
  HandleAbon();
  });
- 
- 
- 
- let slideIndex = 1;
- showSlides(slideIndex);
- 
- function plusSlides(n) {
-   showSlides(slideIndex += n);
- }
- 
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   let slides = Array.from(document.getElementsByClassName("mySlides")); 
-   let dots = Array.from(document.getElementsByClassName("dot")); 
-   if (n > slides.length) { slideIndex = 1; }
-   if (n < 1) { slideIndex = slides.length; }
-   slides.forEach((slide, index) => {
-     slide.style.display = "none";
-     dots[index].classList.remove("active");
-   });
-   slides[slideIndex - 1].style.display = "block";
-   dots[slideIndex - 1].classList.add("active");
- }
- 
- 
- let dots = Array.from(document.getElementsByClassName("dot"));
- dots.forEach((dot, index) => {
-   dot.addEventListener('click', () => {
-     currentSlide(index + 1);
-   });
- });
-
-
+  
+});
 
  // Accordion - om madspild og madspild i tal
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
   const accordionItems = document.querySelectorAll('.accordion-item');
 
   accordionItems.forEach(item => {
@@ -279,6 +202,81 @@ window.onload = function() {
 
   chart.render();
 }
+  
+function handleDonate() 
+{
+  let donationIndput = document.querySelector('#donationamount');
+  let donationAmount = donationIndput.value;
+ let customMessages = 
+  [
+    {threshold: 0, message: 'tak for din donation på '  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 50, message: 'Wow! Tak for din gavmilde donation på '  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 100, message: '"Fantastisk! Din donation på '  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 200, message: 'Vi er dybt taknemmelige for din generøsitet! Tillykke med din donation på '  + donationAmount + ' kr det gør en kæmpe forskel'}
+  ];
+
+ let message = customMessages[0].message;
+
+ for (let i = 0; i < customMessages.length; i++)
+  {
+  if(donationAmount>=customMessages[i].threshold)
+    {
+      message = customMessages[i].message
+    }
+  else if (message<= 0)
+    {
+      alert('det er ikke muligt for dig at donere det beløb');
+    } 
+   
+      else {break;}
+    
+  } 
+
+alert(message);
+}
+
+//   alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
+// }
+  function donate(amount)
+{
+ alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
+ }
+ 
+ let slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+ 
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+ 
+ function showSlides(n) {
+   let slides = Array.from(document.getElementsByClassName("mySlides")); 
+   let dots = Array.from(document.getElementsByClassName("dot")); 
+   if (n > slides.length) { slideIndex = 1; }
+   if (n < 1) { slideIndex = slides.length; }
+   slides.forEach((slide, index) => {
+     slide.style.display = "none";
+     dots[index].classList.remove("active");
+   });
+   slides[slideIndex - 1].style.display = "block";
+   dots[slideIndex - 1].classList.add("active");
+ }
+ 
+ 
+ let dots = Array.from(document.getElementsByClassName("dot"));
+ dots.forEach((dot, index) => {
+   dot.addEventListener('click', () => {
+     currentSlide(index + 1);
+   });
+ });
+
+
+
+
   
 
   
