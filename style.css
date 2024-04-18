@@ -298,7 +298,6 @@ header {
         display: block;
     }
 
-    /* Display dropdown menu on hover */
     .menu ul li:hover .dropdown-menu {
         display: block;
     }
@@ -353,6 +352,18 @@ header {
 
 .tal-item img {
     width: 150px;
+    height: auto;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 90px;
+}
+
+.video-container video {
+    width: 750px;
     height: auto;
 }
 
