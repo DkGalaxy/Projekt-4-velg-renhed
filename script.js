@@ -202,6 +202,38 @@ window.onload = function() {
 
   chart.render();
 }
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let slides = Array.from(document.getElementsByClassName("mySlides")); 
+  let dots = Array.from(document.getElementsByClassName("dot")); 
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+  slides.forEach((slide, index) => {
+    slide.style.display = "none";
+    dots[index].classList.remove("active");
+  });
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+}
+
+
+let dots = Array.from(document.getElementsByClassName("dot"));
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    currentSlide(index + 1);
+  });
+});
+
   
 function handleDonate() 
 {
@@ -233,46 +265,17 @@ function handleDonate()
   } 
 
 alert(message);
-}
 
-//   alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
-// }
-  function donate(amount)
+}
+function donate(amount)
 {
  alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
  }
- 
- let slideIndex = 1;
- showSlides(slideIndex);
- 
- function plusSlides(n) {
-   showSlides(slideIndex += n);
- }
- 
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   let slides = Array.from(document.getElementsByClassName("mySlides")); 
-   let dots = Array.from(document.getElementsByClassName("dot")); 
-   if (n > slides.length) { slideIndex = 1; }
-   if (n < 1) { slideIndex = slides.length; }
-   slides.forEach((slide, index) => {
-     slide.style.display = "none";
-     dots[index].classList.remove("active");
-   });
-   slides[slideIndex - 1].style.display = "block";
-   dots[slideIndex - 1].classList.add("active");
- }
+
+//   alert('Tillykke med din donation på ' + donationAmount + ' kr. Vi sætter stor pris på det!');
+// }
  
  
- let dots = Array.from(document.getElementsByClassName("dot"));
- dots.forEach((dot, index) => {
-   dot.addEventListener('click', () => {
-     currentSlide(index + 1);
-   });
- });
 
 
 
