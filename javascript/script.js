@@ -129,10 +129,10 @@ function handleDonate()
   let donationAmount = donationIndput.value;
  let customMessages = 
   [
-    {threshold: 0, message: 'tak for din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
-    {threshold: 50, message: 'Wow! Tak for din gavmilde donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
-    {threshold: 100, message: '"Fantastisk! Din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'},
-    {threshold: 200, message: 'Vi er dybt taknemmelige for din generøsitet! Tillykke med din donation på'  + donationAmount + ' kr det gør en kæmpe forskel'}
+    {threshold: 0, message: 'tak for din donation på '  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 50, message: 'Wow! Tak for din gavmilde donation på '  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 100, message: '"Fantastisk! Din donation på '  + donationAmount + ' kr det gør en kæmpe forskel'},
+    {threshold: 200, message: 'Vi er dybt taknemmelige for din generøsitet! Tillykke med din donation på '  + donationAmount + ' kr det gør en kæmpe forskel'}
   ];
 
  let message = customMessages[0].message;
