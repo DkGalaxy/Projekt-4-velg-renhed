@@ -432,7 +432,6 @@ main {
     background-color: #ffffff;
     height: auto;
     color: #000000;
-    position: relative;
     z-index: 2;
 }
 
@@ -462,7 +461,6 @@ main {
 
 
 .definition-af-madspild p, h2{
-    position: relative;
     z-index: 1;
 }
 
@@ -481,7 +479,6 @@ main {
     background:#e5e5e5;
     height: auto;
     margin-top: -100px;
-    position: relative;
     z-index: 4;
 }
 
@@ -777,7 +774,6 @@ footer {
         column-gap: 100px;
         margin-left: 90px;
         margin-right: 90px;
-        margin-bottom: 300px;
     }
 
     .definition-af-madspild img {
