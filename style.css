@@ -262,7 +262,7 @@ header {
 
     .menu ul li {
         margin-right: 20px;
-        position: relative; /* Ensure proper positioning of dropdown */
+        position: relative; 
     }
 
     .menu ul li:hover .dropdown-menu {
@@ -274,9 +274,10 @@ header {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #30b24a84;
+        background-color: #CFEEB7;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         color: black;
-        width: 200px; /* Adjust width as needed */
+        width: 200px; 
         z-index: 9999;
     }
 
