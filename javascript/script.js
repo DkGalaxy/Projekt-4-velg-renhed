@@ -74,7 +74,8 @@ function showConfirmationMessage() {
 
 
 // Bliv aktiv
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() 
+{
   const støtFast = document.getElementById('støt-fast');
   const enkelDonation = document.getElementById('enkel-donation');
   const textStøtFast = document.querySelector('.støtfasttext');
@@ -109,6 +110,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
   });
+  function HandleAbon()
+ {
+alert('Tak fordi du vil støtte stop spild af mad hver måned!');
+ }
+ donateBtnV.addEventListener("click", function()
+ {
+ HandleAbon();
+ });
   
 });
 
@@ -153,14 +162,7 @@ alert(message);
  alert("tilykke med din donation på " + amount +" kr vi sætter stor pris på det"); 
  }
  
- function HandleAbon()
- {
-alert('Tak fordi du vil støtte stop spild af mad hver måned!');
- }
- donateBtnV.addEventListener("click", function()
- {
- HandleAbon();
- });
+ 
  
  
  
