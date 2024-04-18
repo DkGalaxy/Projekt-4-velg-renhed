@@ -977,6 +977,7 @@ margin: auto;
     margin: 0 20px 0 14px;
     padding: 0px;
     color: #E5E5E5;
+    font-family:'Montserrat';
 }
 
 .contributegrid 
@@ -1028,7 +1029,7 @@ margin: auto;
 }
 label[for="donationamount"]
 {
-    margin:20px 5px 20px auto;
+    margin:20px 5% 20px auto;
     color: white;
 }
 #donationamount
