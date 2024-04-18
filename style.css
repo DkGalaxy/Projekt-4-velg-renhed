@@ -105,7 +105,7 @@ header {
     padding: 10px;
     margin: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
@@ -905,57 +905,48 @@ input[type="submit"]:hover {
 }
 
 /*bliv aktiv*/
-.hero-container-blivaktiv
-{
+.hero-container-blivaktiv {
     background-color: #CFEEB7;
-    height: 300px;
-}
-.hero-container-blivaktiv h1
-{
-    width: 100%;
-    height: 100%;
-   position: relative;
-    margin:0;
-   top: 140px;
-   left: 45px;
-
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
 }
 
-.hero-container-blivaktiv p
-{
- 
-margin: 0 45px;;
+.hero-container-blivaktiv h1 {
+    padding-bottom: 20px;
+}
+
+.hero-container-blivaktiv p {
 width: 100%;
-
 }
+
 /*billede til at blive frivillig på bliv aktiv siden */
 
-.active-buttons
-{
+.active-buttons {
     text-align: center;
     border: none;
     margin-bottom: 20px;
+    
 }
-.active-buttons img
-{
-    display: block;
-    margin: 0 auto 10px;
+.active-buttons img {
+    margin: 20px auto 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    width: 300px;
 }
-.active-button
-{
+
+.active-button {
     background-color: #EC1323;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
     font-family: 'Kanit';
-    margin:auto;
-    border-radius: 5px;
+    margin: auto;
     width: 200px;
+    text-decoration: none;
 } 
 
 .active-button:hover {
@@ -963,21 +954,35 @@ width: 100%;
     color: white;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-container-blivaktiv {
+        padding-top: 180px;
+    }
+
+    .bliv-frivillig {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .active-buttons {
+        padding: 10px 150px;
+    }
+}
+
 /*donations siden*/
-.hero-containerC
-{
+.hero-containerC {
 padding: 100px;
 background-color: #FFFFF6;
 margin: auto;
-
-
 }
+
 .contributegridwrap
 {
     border: 2px;
     padding: 10px ;
     max-width: 768px; 
-    height:600px;
+    height: 600px;
     margin: auto;
     background-color: #000000;
    
@@ -1032,7 +1037,8 @@ margin: auto;
     background-color: #EC1323;
     color: #E5E5E5;
     border: none;
-    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 
 }
 .griditem:hover
@@ -1055,6 +1061,7 @@ label[for="donationamount"]
 width: 280px;
 padding: 10px 20px;
 }
+
 #DonateBtn
 {
     padding: 10px 20px;
@@ -1062,8 +1069,9 @@ padding: 10px 20px;
     background-color: #EC1323;
     color: #E5E5E5;
     border: none;
-    border-radius: 5px;
     width: 150px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 #AbonBtn 
 {
@@ -1073,10 +1081,27 @@ padding: 10px 20px;
     background-color: #EC1323;
     color: #E5E5E5;
     border: none;
-    border-radius: 5px;
     width: 150px;
+    font-family: 'Montserrat';
+    font-size: 18px;
 }
 
+@media screen and (min-width: 768px) {
+    .hero-containerC {
+        padding-top: 180px;
+    }
+
+    .contributegridwrap {
+        max-width: 100%;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+    }
+}
+
+/* Bliv frivillig */
 
 .blivfrivilligcontainer {
     display: flex;
@@ -1211,6 +1236,7 @@ padding: 10px 20px;
     text-align: center;
     margin-bottom: -70px
 }
+
 
 @media screen and (min-width: 768px){
     .blivfrivilligcontainer {
