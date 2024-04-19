@@ -1286,7 +1286,6 @@ padding: 10px 20px;
     }
     .Aktivitetergrid{
         margin-top: 27px;
-        background-color: #FFFFF6;
         display: grid;
         grid-template-columns: 1fr 2fr;
     
