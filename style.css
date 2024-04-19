@@ -432,7 +432,6 @@ main {
     background-color: #ffffff;
     height: auto;
     color: #000000;
-    z-index: 2;
 }
 
 .madspild-i-tal-intro h1{
@@ -442,6 +441,7 @@ main {
 
 .madspild-i-tal-intro h2 {
     margin-left: 30px;
+    padding-top: 150px;
 }
 
 .madspild-i-tal-intro p {
@@ -455,7 +455,6 @@ main {
 }
 
 .madspild-i-tal-p2 {
-    margin-bottom: 80px;
     margin-top: 250px;
 }
 
@@ -464,22 +463,19 @@ main {
     z-index: 1;
 }
 
-.definition-af-madspild img {
-    transform: rotate(180deg);
-    width: 220%;
+.definition-af-madspild {
+    background-image: url(images/wave-forside-upsidedown.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 500px;
-    margin-top: -400px;
-    margin-left: -320px;
-    position: relative;
-    z-index: -1;
 }
 
 .madspild-i-tal-dd-intro {
     text-align: center;
     background:#e5e5e5;
     height: auto;
-    margin-top: -100px;
-    z-index: 4;
+    margin-top: -70px;
 }
 
 .madspild-i-tal-dd-intro p {
@@ -505,39 +501,30 @@ main {
     background-color: #ffffff;
     height: auto;
     color: #000000;
-    position: relative;
-
 }
 
 .om-madspild-intro h1{
     padding-top: 100px;
     text-align: center;
-    position: relative;
-    z-index: 1;
 }
 
 .om-madspild-p1{
     text-align: center;
-    position: relative;
-    z-index: 2;
     margin: 20px;
 }
 
 
 .om-madspild-intro .arsager p {
     color: #000000;
-    position: relative;
-    z-index: 3;
 }
 
 .om-madspild-intro .om-madspild-wave {
-    margin-top: -180px;
-    height: 0px;
-    width: auto;
-    max-width: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 0;
+    background-image: url(images/wave-forside.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100%;
 }
 
 .om-madspild-intro .arsager {
@@ -546,12 +533,7 @@ main {
     justify-content: center;
     max-width: 100%;
     margin: 20px;
-    margin-top: 180px;
-    position: relative;
-    z-index: 1;
 }
-
-
 
 .om-madspild-intro .arsager p{
     margin-top: -5px;
@@ -567,7 +549,6 @@ main {
     width: 170px;
     height: 170px;
 }
-
 
 .arsager img {
     width: 150px;
@@ -723,6 +704,7 @@ footer {
 
     .om-madspild-intro .arsager {
         margin-bottom: 180px;
+        margin-top: -500px;
     }
 
     .om-madspild-intro .arsager p {
@@ -732,7 +714,6 @@ footer {
     .om-madspild-p2 {
         margin-right: 90px;
         margin-left: 90px;
-        margin-bottom: 180px;
     }
 
     .om-madspild-dd-intro {
@@ -746,23 +727,10 @@ footer {
     }
 
     .om-madspild-intro .om-madspild-wave {
-        width: 2000px;
+        height: 80vh;
     }
-
-    .om-madspild-intro .om-madspild-wave {
-        width: 200%;
-        height: 50px;
-    }
-
 
     /* Madspild i tal */
-    
-    .definition-af-madspild img {
-        width: 150%;
-        height: auto;
-        margin-left: -200px;
-        margin-top: -200px;
-    }
 
     .madspild-i-tal-p1 {
         margin-left: 90px;
@@ -776,18 +744,9 @@ footer {
         margin-right: 90px;
     }
 
-    .definition-af-madspild img {
-        width: 160%;
-        margin-top: -450px;
-        margin-left: -800px;
-        overflow-x: hidden;
-        position: relative;
-        z-index: 0;
-    }
-
     .definition-af-madspild p {
         margin-left: 120px;
-        margin-right: 120px;
+        margin-right: 600px;
         padding-bottom: 10px;
     }
     
@@ -796,20 +755,14 @@ footer {
     }
 
     .madspild-i-tal-dd-intro {
-        margin-top: -550px;
         margin-bottom: 0px;
-        padding-top: 10px;
         padding-bottom: 30px;
+        margin-top: -150px;
     }
 
     .madspild-i-tal-dd-intro p {
         margin-left: 300px;
         margin-right: 300px;
-    }
-
-    .accordion {
-        position: relative;
-        z-index: 5;
     }
 
     .accordion-content {
@@ -980,66 +933,62 @@ width: 100%;
 
 /*donations siden*/
 .hero-containerC {
-padding: 100px;
+padding: 100px 40px 40px;
 background-color: #FFFFF6;
 margin: auto;
 }
 
-.contributegridwrap
-{
+.contributegridwrap {
     border: 2px;
     padding: 10px ;
     max-width: 768px; 
     height: 600px;
     margin: auto;
     background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
    
   
 }
-.contributegridwrap h3
-{
-    margin: 20px 0 20px auto;
-    
-    color: #E5E5E5;
-  
+.contributegridwrap h3 {   
+    color: #E5E5E5; 
 }
-.checkboxescontribute label
-{
+
+.checkboxescontribute label {
     margin: 0 20px 0 14px;
     padding: 0px;
     color: #E5E5E5;
     font-family:'Montserrat';
+    font-weight: 500;
 }
 
-.contributegrid 
-{
-    grid-template-columns: 140px 150px 150px;
-    display: grid;
+.contributegrid {
+    display: flex;
     grid-gap: 20px;
-    justify-content: center;
-    align-items: center;
     color:#E5E5E5;
 
 }
-.contritext
-{
+
+.contritext {
     color: #E5E5E5;
-    margin: 20px 0 20px auto;
+    padding: 0 40px 0;
 }
-.støtfasttext
-{
+
+.støtfasttext {
     display: none;
     color: #E5E5E5;
-    margin: 20px 0 0 auto;
+    padding: 0 40px 0;
 }
-.enkeldonationtext
-{
-    margin: 20px 0 20px auto;
+
+.enkeldonationtext {
     display: none;
     color: #E5E5E5;
+    padding: 0 40px 0;
 }
-.griditem
-{
+
+.griditem {
     padding: 10px 20px;
     margin-top:  10px;
     background-color: #EC1323;
@@ -1047,15 +996,14 @@ margin: auto;
     border: none;
     font-family: 'Kanit';
     font-size: 18px;
-
 }
-.griditem:hover
-{
+
+.griditem:hover {
     opacity: .7;
     size: 2px;
 }
-.active-button
-{
+
+.active-button {
   
   display:block;
 }
@@ -1073,7 +1021,6 @@ padding: 10px 20px;
 #DonateBtn
 {
     padding: 10px 20px;
-    margin:  0px 0 0 50px;
     background-color: #EC1323;
     color: #E5E5E5;
     border: none;
@@ -1097,6 +1044,8 @@ padding: 10px 20px;
 @media screen and (min-width: 768px) {
     .hero-containerC {
         padding-top: 180px;
+        padding-left: 90px;
+        padding-right: 180px;
     }
 
     .contributegridwrap {
@@ -1106,6 +1055,37 @@ padding: 10px 20px;
         padding-top: 40px;
         padding-bottom: 40px;
         height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: normal;
+        justify-content: start;
+    }
+
+    .contritext {
+        padding-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 350px;
+    }
+
+    .contributegridwrap h3 {
+        padding: 10px 0 10px;
+    }
+
+    .checkboxescontribute {
+        padding: 10px 0 10px;
+    }
+
+    .contributegrid {
+        padding: 10px 0 10px;
+    }
+
+    #donationamount {
+        margin: 10px 0 10px;
+    }
+
+    #DonateBtn {
+        margin: 10px 0 10px;
     }
 }
 
